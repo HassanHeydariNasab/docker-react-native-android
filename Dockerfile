@@ -79,6 +79,7 @@ ENV PATH ${PATH}:/opt/node/bin
 # Install React-Native package
 # ——————————
 RUN npm install --global react-native-cli
+RUN npm install --global yarn
 
 ENV LANG en_US.UTF-8
 
