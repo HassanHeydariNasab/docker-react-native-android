@@ -80,8 +80,8 @@ ENV PATH ${PATH}:/opt/node/bin
 # ——————————
 RUN npm install --global react-native-cli
 RUN npm install --global yarn
-RUN ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn
-RUN ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg
+RUN ln -s /opt/node/lib/node_modules/yarn/bin/yarn.js /usr/local/bin/yarn
+RUN ln -s /opt/node/lib/node_modules/yarn/bin/yarn.js /usr/local/bin/yarnpkg
 
 ENV LANG en_US.UTF-8
 
